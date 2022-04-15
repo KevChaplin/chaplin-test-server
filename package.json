@@ -1,0 +1,16 @@
+{
+  "name": "chaplin-test-server",
+  "version": "1.0.0",
+  "description": "for testing requests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Kevin Chaplin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
