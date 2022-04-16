@@ -1,0 +1,10 @@
+﻿{
+	"type": "userItem", 
+	"name": "activeFilters",
+	"version": 1,
+	"createdOn": "2021-07-02T13:23:29Z",
+	"activeFilters": {
+		"category": "6f324071-56b2-4574-8533-817dc332fe66",
+		"day": [1,2,3,4,5]
+	}
+}

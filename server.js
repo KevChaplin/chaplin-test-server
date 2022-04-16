@@ -7,13 +7,28 @@ const app = express()
 // Middleware
 app.use(cors())
 
-// Example json data
-const data = require('./data.json')
+// Json data
+const activeFilters = require('./data/activeFilters.json')
+const searchFilters = require('./data/searchFilters-en-GB.json')
+const filtersTextEn = require('./data/searchFilters-text-en-GB.json')
+const filtersTextJa = require('./data/searchFilters-text-ja-JP.json')
 
 // Routes
 
-app.get('/api', (req, res) => {
-    res.json(data)
+app.get('/api/active-filters', (req, res) => {
+    res.json(activeFilters)
+})
+
+app.get('/api/search-filters', (req, res) => {
+    res.json(searchFilters)
+})
+
+app.get('/api/filters-text-en', (req, res) => {
+    res.json(filtersTextEn)
+})
+
+app.get('/api/filters-text-ja', (req, res) => {
+    res.json(filtersTextJa)
 })
 
 // Basic Config
